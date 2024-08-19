@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MBTI 테스트 결과</title>
+
+
+<style>
+/* Ensure 9:16 aspect ratio, centered layout, and proper styling */
+.container {
+    width: 100%;
+    max-width: 360px;
+    height: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.perfume-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.perfume-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.perfume-brand {
+    margin-bottom: 20px;
+}
+
+.note-item {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6c757d; /* Default color */
+}
+
+.note-item:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        height: auto;
+    }
+}
+</style></head>
+<body>
+<div class="container">
+<h1 class="result-title">테스트 결과: <span id="mbti-type"></span></h1>
+<h2 class="recommendation-title">당신에게 추천하는 향수</h2>
+<div class="perfume-section">
+<img alt="향수 이미지" class="perfume-image" id="perfume-image" src=""/>
+<div class="perfume-name" id="perfume-name">향수 이름</div>
+<div class="perfume-brand" id="perfume-brand">브랜드 이름</div>
+</div>
+<div class="note-section">
+<h2 class="note-title">추천 향수 노트</h2>
+<div id="note-content">
+<!-- 추천 노트가 여기에 표시됩니다 -->
+</div>
+</div>
+<div class="share-buttons">
+<button id="save-image-btn">이미지 저장</button>
+<button id="copy-link-btn">링크 복사</button>
+</div>
+</div>
+<script>
+function calculateResult() {
+    const scores = JSON.parse(localStorage.getItem("scores"));
+
+    const mbtiType =
+        (scores.EI.E >= scores.EI.I ? "E" : "I") +
+        (scores.SN.S >= scores.SN.N ? "S" : "N") +
+        (scores.TF.T >= scores.TF.F ? "T" : "F") +
+        (scores.JP.J >= scores.JP.P ? "J" : "P");
+
+    document.getElementById("mbti-type").textContent = mbtiType;
+
+    const noteColors = {
+        Floral: "#FFC0CB",
+        Citrus: "#FFD700",
+        Woody: "#8B4513",
+        Spicy: "#FF4500",
+        Fresh: "#7FFFD4",
+        Sweet: "#FFB6C1",
+        Oriental: "#DAA520",
+        Fruity: "#FF69B4",
+        Aquatic: "#4682B4",
+        Green: "#32CD32"
+    };
+
+    fetch("perfume_recommendations.json")
+        .then(response => response.json())
+        .then(data => {
+            const recommendation = data[mbtiType];
+            if (recommendation) {
+                const firstRecommendation = recommendation[Object.keys(recommendation)[0]];
+                const imagePath = firstRecommendation.image;
+                const notes = firstRecommendation.notes || [];
+
+                document.getElementById("perfume-name").textContent = firstRecommendation.name;
+                document.getElementById("perfume-brand").textContent = firstRecommendation.brand;
+                document.getElementById("perfume-image").src = imagePath;
+
+                const noteContent = document.getElementById("note-content");
+                noteContent.innerHTML = "";
+                notes.forEach(note => {
+                    const noteButton = document.createElement("button");
+                    noteButton.className = "note-item";
+                    noteButton.textContent = note;
+                    noteButton.style.backgroundColor = noteColors[note] || '#6c757d';
+                    noteContent.appendChild(noteButton);
+                });
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching recommendations:", error);
+        });
+}
+
+window.onload = calculateResult;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</body>
+</html>
