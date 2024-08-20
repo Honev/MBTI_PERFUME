@@ -3,992 +3,992 @@
     "IN": {
       "name": "Oud Wood",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/INTJ_IN.png"
+      "image": "./asset/img/INTJ_IN.png"
     },
     "NI": {
       "name": "Colonia",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/INTJ_NI.png"
+      "image": "./asset/img/INTJ_NI.png"
     },
     "IT": {
       "name": "Dior Homme",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/INTJ_IT.png"
+      "image": "./asset/img/INTJ_IT.png"
     },
     "TI": {
       "name": "Incense Kyoto",
       "brand": "Comme des Garçons",
-      "image": "MBTI_TEST/asset/img/INTJ_TI.png"
+      "image": "./asset/img/INTJ_TI.png"
     },
     "IJ": {
       "name": "Cedrat Boise",
       "brand": "Mancera",
-      "image": "MBTI_TEST/asset/img/INTJ_IJ.png"
+      "image": "./asset/img/INTJ_IJ.png"
     },
     "JI": {
       "name": "For Him Bleu Noir",
       "brand": "Narciso Rodriguez",
-      "image": "MBTI_TEST/asset/img/INTJ_JI.png"
+      "image": "./asset/img/INTJ_JI.png"
     },
     "NT": {
       "name": "Reflection Man",
       "brand": "Amouage",
-      "image": "MBTI_TEST/asset/img/INTJ_NT.png"
+      "image": "./asset/img/INTJ_NT.png"
     },
     "TN": {
       "name": "Aqua Universalis",
       "brand": "Maison Francis Kurkdjian",
-      "image": "MBTI_TEST/asset/img/INTJ_TN.png"
+      "image": "./asset/img/INTJ_TN.png"
     },
     "NJ": {
       "name": "Fico di Amalfi",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/INTJ_NJ.png"
+      "image": "./asset/img/INTJ_NJ.png"
     },
     "JN": {
       "name": "Aqua Allegoria Mandarine Basilic",
       "brand": "Guerlain",
-      "image": "MBTI_TEST/asset/img/INTJ_JN.png"
+      "image": "./asset/img/INTJ_JN.png"
     },
     "TJ": {
       "name": "Neroli Portofino",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/INTJ_TJ.png"
+      "image": "./asset/img/INTJ_TJ.png"
     },
     "JT": {
       "name": "Acqua di Sale",
       "brand": "Profumum Roma",
-      "image": "MBTI_TEST/asset/img/INTJ_JT.png"
+      "image": "./asset/img/INTJ_JT.png"
     }
   },
   "ISTJ": {
     "IS": {
       "name": "Bois d'Argent",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ISTJ_IS.png"
+      "image": "./asset/img/ISTJ_IS.png"
     },
     "SI": {
       "name": "Philosykos",
       "brand": "Diptyque",
-      "image": "MBTI_TEST/asset/img/ISTJ_SI.png"
+      "image": "./asset/img/ISTJ_SI.png"
     },
     "IT": {
       "name": "Terre d'Hermès",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/ISTJ_IT.png"
+      "image": "./asset/img/ISTJ_IT.png"
     },
     "TI": {
       "name": "Tabacco Toscano",
       "brand": "Santa Maria Novella",
-      "image": "MBTI_TEST/asset/img/ISTJ_TI.png"
+      "image": "./asset/img/ISTJ_TI.png"
     },
     "IJ": {
       "name": "Chanel No.5",
       "brand": "Chanel",
-      "image": "MBTI_TEST/asset/img/ISTJ_IJ.png"
+      "image": "./asset/img/ISTJ_IJ.png"
     },
     "JI": {
       "name": "Vetiver",
       "brand": "Guerlain",
-      "image": "MBTI_TEST/asset/img/ISTJ_JI.png"
+      "image": "./asset/img/ISTJ_JI.png"
     },
     "ST": {
       "name": "Gris Dior",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ISTJ_ST.png"
+      "image": "./asset/img/ISTJ_ST.png"
     },
     "TS": {
       "name": "Aqua Universalis Forte",
       "brand": "Maison Francis Kurkdjian",
-      "image": "MBTI_TEST/asset/img/ISTJ_TS.png"
+      "image": "./asset/img/ISTJ_TS.png"
     },
     "SJ": {
       "name": "Green Irish Tweed",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/ISTJ_SJ.png"
+      "image": "./asset/img/ISTJ_SJ.png"
     },
     "JS": {
       "name": "Eau des Merveilles",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/ISTJ_JS.png"
+      "image": "./asset/img/ISTJ_JS.png"
     },
     "TJ": {
       "name": "Himalaya",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/ISTJ_TJ.png"
+      "image": "./asset/img/ISTJ_TJ.png"
     },
     "JT": {
       "name": "Udaipur",
       "brand": "Etro",
-      "image": "MBTI_TEST/asset/img/ISTJ_JT.png"
+      "image": "./asset/img/ISTJ_JT.png"
     }
   },
   "ESTJ": {
     "ES": {
       "name": "Chance Eau Fraîche",
       "brand": "Chanel",
-      "image": "MBTI_TEST/asset/img/ESTJ_ES.png"
+      "image": "./asset/img/ESTJ_ES.png"
     },
     "SE": {
       "name": "Bergamotto di Calabria",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/ESTJ_SE.png"
+      "image": "./asset/img/ESTJ_SE.png"
     },
     "ET": {
       "name": "Encre Noire",
       "brand": "Lalique",
-      "image": "MBTI_TEST/asset/img/ESTJ_ET.png"
+      "image": "./asset/img/ESTJ_ET.png"
     },
     "TE": {
       "name": "Silver Mountain Water",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/ESTJ_TE.png"
+      "image": "./asset/img/ESTJ_TE.png"
     },
     "EJ": {
       "name": "Oud & Bergamot",
       "brand": "Jo Malone",
-      "image": "MBTI_TEST/asset/img/ESTJ_EJ.png"
+      "image": "./asset/img/ESTJ_EJ.png"
     },
     "JE": {
       "name": "Orangerie Venise",
       "brand": "Armani Privé",
-      "image": "MBTI_TEST/asset/img/ESTJ_JE.png"
+      "image": "./asset/img/ESTJ_JE.png"
     },
     "ST": {
       "name": "Vetiver Extraordinaire",
       "brand": "Frédéric Malle",
-      "image": "MBTI_TEST/asset/img/ESTJ_ST.png"
+      "image": "./asset/img/ESTJ_ST.png"
     },
     "TS": {
       "name": "L'Eau d'Issey",
       "brand": "Issey Miyake",
-      "image": "MBTI_TEST/asset/img/ESTJ_TS.png"
+      "image": "./asset/img/ESTJ_TS.png"
     },
     "SJ": {
       "name": "Aventus",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/ESTJ_SJ.png"
+      "image": "./asset/img/ESTJ_SJ.png"
     },
     "JS": {
       "name": "Tam Dao",
       "brand": "Diptyque",
-      "image": "MBTI_TEST/asset/img/ESTJ_JS.png"
+      "image": "./asset/img/ESTJ_JS.png"
     },
     "TJ": {
       "name": "Luna Rossa Carbon",
       "brand": "Prada",
-      "image": "MBTI_TEST/asset/img/ESTJ_TJ.png"
+      "image": "./asset/img/ESTJ_TJ.png"
     },
     "JT": {
       "name": "Nuit d'Issey",
       "brand": "Issey Miyake",
-      "image": "MBTI_TEST/asset/img/ESTJ_JT.png"
+      "image": "./asset/img/ESTJ_JT.png"
     }
   },
   "ENTP": {
     "EN": {
       "name": "Jardin du Poete",
       "brand": "Eau d'Italie",
-      "image": "MBTI_TEST/asset/img/ENTP_EN.png"
+      "image": "./asset/img/ENTP_EN.png"
     },
     "NE": {
       "name": "Vetiver Tonka",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/ENTP_NE.png"
+      "image": "./asset/img/ENTP_NE.png"
     },
     "ET": {
       "name": "Uden",
       "brand": "Xerjoff",
-      "image": "MBTI_TEST/asset/img/ENTP_ET.png"
+      "image": "./asset/img/ENTP_ET.png"
     },
     "TE": {
       "name": "Mandarino di Amalfi",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ENTP_TE.png"
+      "image": "./asset/img/ENTP_TE.png"
     },
     "EP": {
       "name": "Wood Sage & Sea Salt",
       "brand": "Jo Malone",
-      "image": "MBTI_TEST/asset/img/ENTP_EP.png"
+      "image": "./asset/img/ENTP_EP.png"
     },
     "PE": {
       "name": "Boy",
       "brand": "Chanel",
-      "image": "MBTI_TEST/asset/img/ENTP_PE.png"
+      "image": "./asset/img/ENTP_PE.png"
     },
     "NT": {
       "name": "Herod",
       "brand": "Parfums de Marly",
-      "image": "MBTI_TEST/asset/img/ENTP_NT.png"
+      "image": "./asset/img/ENTP_NT.png"
     },
     "TN": {
       "name": "Ginepro di Sardegna",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/ENTP_TN.png"
+      "image": "./asset/img/ENTP_TN.png"
     },
     "NP": {
       "name": "Peau de Soie",
       "brand": "Diptyque",
-      "image": "MBTI_TEST/asset/img/ENTP_NP.png"
+      "image": "./asset/img/ENTP_NP.png"
     },
     "PN": {
       "name": "Green Tea",
       "brand": "Elizabeth Arden",
-      "image": "MBTI_TEST/asset/img/ENTP_PN.png"
+      "image": "./asset/img/ENTP_PN.png"
     },
     "TP": {
       "name": "Ombre Leather",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ENTP_TP.png"
+      "image": "./asset/img/ENTP_TP.png"
     },
     "PT": {
       "name": "Toy Boy",
       "brand": "Moschino",
-      "image": "MBTI_TEST/asset/img/ENTP_PT.png"
+      "image": "./asset/img/ENTP_PT.png"
     }
   },
   "INFP": {
     "IN": {
       "name": "Bois Farine",
       "brand": "L'Artisan Parfumeur",
-      "image": "MBTI_TEST/asset/img/INFP_IN.png"
+      "image": "./asset/img/INFP_IN.png"
     },
     "NI": {
       "name": "Eau de Mandarine Ambrée",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/INFP_NI.png"
+      "image": "./asset/img/INFP_NI.png"
     },
     "IF": {
       "name": "Gris Charnel",
       "brand": "BDK Parfums",
-      "image": "MBTI_TEST/asset/img/INFP_IF.png"
+      "image": "./asset/img/INFP_IF.png"
     },
     "FI": {
       "name": "Daisy",
       "brand": "Marc Jacobs",
-      "image": "MBTI_TEST/asset/img/INFP_FI.png"
+      "image": "./asset/img/INFP_FI.png"
     },
     "IP": {
       "name": "L'Air du Temps",
       "brand": "Nina Ricci",
-      "image": "MBTI_TEST/asset/img/INFP_IP.png"
+      "image": "./asset/img/INFP_IP.png"
     },
     "PI": {
       "name": "Neroli Sauvage",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/INFP_PI.png"
+      "image": "./asset/img/INFP_PI.png"
     },
     "NF": {
       "name": "Baccarat Rouge 540",
       "brand": "Maison Francis Kurkdjian",
-      "image": "MBTI_TEST/asset/img/INFP_NF.png"
+      "image": "./asset/img/INFP_NF.png"
     },
     "FN": {
       "name": "Philosykos",
       "brand": "Diptyque",
-      "image": "MBTI_TEST/asset/img/INFP_FN.png"
+      "image": "./asset/img/INFP_FN.png"
     },
     "NP": {
       "name": "Fleur Narcotique",
       "brand": "Ex Nihilo",
-      "image": "MBTI_TEST/asset/img/INFP_NP.png"
+      "image": "./asset/img/INFP_NP.png"
     },
     "PN": {
       "name": "Cool Water",
       "brand": "Davidoff",
-      "image": "MBTI_TEST/asset/img/INFP_PN.png"
+      "image": "./asset/img/INFP_PN.png"
     },
     "FP": {
       "name": "Bright Crystal",
       "brand": "Versace",
-      "image": "MBTI_TEST/asset/img/INFP_FP.png"
+      "image": "./asset/img/INFP_FP.png"
     },
     "PF": {
       "name": "Cherry in the Air",
       "brand": "Escada",
-      "image": "MBTI_TEST/asset/img/INFP_PF.png"
+      "image": "./asset/img/INFP_PF.png"
     }
   },
   "ENFJ": {
     "EN": {
       "name": "Eau de Magnolia",
       "brand": "Frederic Malle",
-      "image": "MBTI_TEST/asset/img/ENFJ_EN.png"
+      "image": "./asset/img/ENFJ_EN.png"
     },
     "NE": {
       "name": "Eau des Sens",
       "brand": "Diptyque",
-      "image": "MBTI_TEST/asset/img/ENFJ_NE.png"
+      "image": "./asset/img/ENFJ_NE.png"
     },
     "EF": {
       "name": "L'Ombre dans L'Eau",
       "brand": "Diptyque",
-      "image": "MBTI_TEST/asset/img/ENFJ_EF.png"
+      "image": "./asset/img/ENFJ_EF.png"
     },
     "FE": {
       "name": "Mémoire d'une Odeur",
       "brand": "Gucci",
-      "image": "MBTI_TEST/asset/img/ENFJ_FE.png"
+      "image": "./asset/img/ENFJ_FE.png"
     },
     "EJ": {
       "name": "Dior Homme Intense",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ENFJ_EJ.png"
+      "image": "./asset/img/ENFJ_EJ.png"
     },
     "JE": {
       "name": "Santal Blush",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ENFJ_JE.png"
+      "image": "./asset/img/ENFJ_JE.png"
     },
     "NF": {
       "name": "Rose Prick",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ENFJ_NF.png"
+      "image": "./asset/img/ENFJ_NF.png"
     },
     "FN": {
       "name": "Velvet Orchid",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ENFJ_FN.png"
+      "image": "./asset/img/ENFJ_FN.png"
     },
     "NJ": {
       "name": "Galloway",
       "brand": "Parfums de Marly",
-      "image": "MBTI_TEST/asset/img/ENFJ_NJ.png"
+      "image": "./asset/img/ENFJ_NJ.png"
     },
     "JN": {
       "name": "Ninfeo Mio",
       "brand": "Goutal",
-      "image": "MBTI_TEST/asset/img/ENFJ_JN.png"
+      "image": "./asset/img/ENFJ_JN.png"
     },
     "FJ": {
       "name": "Narciso",
       "brand": "Narciso Rodriguez",
-      "image": "MBTI_TEST/asset/img/ENFJ_FJ.png"
+      "image": "./asset/img/ENFJ_FJ.png"
     },
     "JF": {
       "name": "For Her",
       "brand": "Narciso Rodriguez",
-      "image": "MBTI_TEST/asset/img/ENFJ_JF.png"
+      "image": "./asset/img/ENFJ_JF.png"
     }
   },
   "ISFP": {
     "IS": {
       "name": "Naxos",
       "brand": "Xerjoff",
-      "image": "MBTI_TEST/asset/img/ISFP_IS.png"
+      "image": "./asset/img/ISFP_IS.png"
     },
     "SI": {
       "name": "Gris Charnel",
       "brand": "BDK Parfums",
-      "image": "MBTI_TEST/asset/img/ISFP_SI.png"
+      "image": "./asset/img/ISFP_SI.png"
     },
     "IF": {
       "name": "Bergamote 22",
       "brand": "Le Labo",
-      "image": "MBTI_TEST/asset/img/ISFP_IF.png"
+      "image": "./asset/img/ISFP_IF.png"
     },
     "FI": {
       "name": "Miss Dior Blooming Bouquet",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ISFP_FI.png"
+      "image": "./asset/img/ISFP_FI.png"
     },
     "IP": {
       "name": "Wonderoud",
       "brand": "Comme des Garçons",
-      "image": "MBTI_TEST/asset/img/ISFP_IP.png"
+      "image": "./asset/img/ISFP_IP.png"
     },
     "PI": {
       "name": "Santal 33",
       "brand": "Le Labo",
-      "image": "MBTI_TEST/asset/img/ISFP_PI.png"
+      "image": "./asset/img/ISFP_PI.png"
     },
     "SF": {
       "name": "Original Musk",
       "brand": "Kiehl's",
-      "image": "MBTI_TEST/asset/img/ISFP_SF.png"
+      "image": "./asset/img/ISFP_SF.png"
     },
     "FS": {
       "name": "Aqua Allegoria Rosa Rossa",
       "brand": "Guerlain",
-      "image": "MBTI_TEST/asset/img/ISFP_FS.png"
+      "image": "./asset/img/ISFP_FS.png"
     },
     "SP": {
       "name": "Light Blue",
       "brand": "Dolce & Gabbana",
-      "image": "MBTI_TEST/asset/img/ISFP_SP.png"
+      "image": "./asset/img/ISFP_SP.png"
     },
     "PS": {
       "name": "La Nuit de L'Homme",
       "brand": "Yves Saint Laurent",
-      "image": "MBTI_TEST/asset/img/ISFP_PS.png"
+      "image": "./asset/img/ISFP_PS.png"
     },
     "FP": {
       "name": "Portrait of a Lady",
       "brand": "Frederic Malle",
-      "image": "MBTI_TEST/asset/img/ISFP_FP.png"
+      "image": "./asset/img/ISFP_FP.png"
     },
     "PF": {
       "name": "Eau du Soir",
       "brand": "Sisley",
-      "image": "MBTI_TEST/asset/img/ISFP_PF.png"
+      "image": "./asset/img/ISFP_PF.png"
     }
   },
   "ESFP": {
     "ES": {
       "name": "Twilly d'Hermès",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/ESFP_ES.png"
+      "image": "./asset/img/ESFP_ES.png"
     },
     "SE": {
       "name": "Colonia Essenza",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/ISFP_SE.png"
+      "image": "./asset/img/ISFP_SE.png"
     },
     "EF": {
       "name": "J'adore",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ESFP_EF.png"
+      "image": "./asset/img/ESFP_EF.png"
     },
     "FE": {
       "name": "Eau Rose",
       "brand": "Diptyque",
-      "image": "MBTI_TEST/asset/img/ESFP_FE.png"
+      "image": "./asset/img/ESFP_FE.png"
     },
     "EP": {
       "name": "L'Imperatrice",
       "brand": "Dolce & Gabbana",
-      "image": "MBTI_TEST/asset/img/ESFP_EP.png"
+      "image": "./asset/img/ESFP_EP.png"
     },
     "PE": {
       "name": "La Vie Est Belle",
       "brand": "Lancôme",
-      "image": "MBTI_TEST/asset/img/ESFP_PE.png"
+      "image": "./asset/img/ESFP_PE.png"
     },
     "SF": {
       "name": "Cedrat Enivrant",
       "brand": "Atelier Cologne",
-      "image": "MBTI_TEST/asset/img/ESFP_SF.png"
+      "image": "./asset/img/ESFP_SF.png"
     },
     "FS": {
       "name": "Verveine Utopie",
       "brand": "Atelier Cologne",
-      "image": "MBTI_TEST/asset/img/ESFP_FS.png"
+      "image": "./asset/img/ESFP_FS.png"
     },
     "SP": {
       "name": "Acqua di Gioia",
       "brand": "Giorgio Armani",
-      "image": "MBTI_TEST/asset/img/ESFP_SP.png"
+      "image": "./asset/img/ESFP_SP.png"
     },
     "PS": {
       "name": "Royal Water",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/ESFP_PS.png"
+      "image": "./asset/img/ESFP_PS.png"
     },
     "FP": {
       "name": "Delina",
       "brand": "Parfums de Marly",
-      "image": "MBTI_TEST/asset/img/ESFP_FP.png"
+      "image": "./asset/img/ESFP_FP.png"
     },
     "PF": {
       "name": "Chloé Eau de Parfum Lumineuse",
       "brand": "Chloé",
-      "image": "MBTI_TEST/asset/img/ESFP_PF.png"
+      "image": "./asset/img/ESFP_PF.png"
     }
   },
   "ENTJ": {
     "EN": {
       "name": "Acqua di Parma Colonia",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/ENTJ_EN.png"
+      "image": "./asset/img/ENTJ_EN.png"
     },
     "NE": {
       "name": "Interlude Man",
       "brand": "Amouage",
-      "image": "MBTI_TEST/asset/img/ENTJ_NE.png"
+      "image": "./asset/img/ENTJ_NE.png"
     },
     "ET": {
       "name": "Soleil Blanc",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ENTJ_ET.png"
+      "image": "./asset/img/ENTJ_ET.png"
     },
     "TE": {
       "name": "Bleu de Chanel",
       "brand": "Chanel",
-      "image": "MBTI_TEST/asset/img/ENTJ_TE.png"
+      "image": "./asset/img/ENTJ_TE.png"
     },
     "EJ": {
       "name": "Fève Délicieuse",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ENTJ_EJ.png"
+      "image": "./asset/img/ENTJ_EJ.png"
     },
     "JE": {
       "name": "Timbuktu",
       "brand": "L'Artisan Parfumeur",
-      "image": "MBTI_TEST/asset/img/ENTJ_JE.png"
+      "image": "./asset/img/ENTJ_JE.png"
     },
     "NT": {
       "name": "Mirto di Panarea",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/ENTJ_NT.png"
+      "image": "./asset/img/ENTJ_NT.png"
     },
     "TN": {
       "name": "Bergamot 22",
       "brand": "Le Labo",
-      "image": "MBTI_TEST/asset/img/ENTJ_TN.png"
+      "image": "./asset/img/ENTJ_TN.png"
     },
     "NJ": {
       "name": "Aqua Vitae",
       "brand": "Maison Francis Kurkdjian",
-      "image": "MBTI_TEST/asset/img/ENTJ_NJ.png"
+      "image": "./asset/img/ENTJ_NJ.png"
     },
     "JN": {
       "name": "Eau Sauvage",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ENTJ_JN.png"
+      "image": "./asset/img/ENTJ_JN.png"
     },
     "TJ": {
       "name": "Voyage d'Hermès",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/ENTJ_TJ.png"
+      "image": "./asset/img/ENTJ_TJ.png"
     },
     "JT": {
       "name": "Eau Duelle",
       "brand": "Diptyque",
-      "image": "MBTI_TEST/asset/img/ENTJ_JT.png"
+      "image": "./asset/img/ENTJ_JT.png"
     }
   },
   "ISTP": {
     "IS": {
       "name": "Wonderwood",
       "brand": "Comme des Garçons",
-      "image": "MBTI_TEST/asset/img/ISTP_IS.png"
+      "image": "./asset/img/ISTP_IS.png"
     },
     "SI": {
       "name": "Zeste de Gingembre",
       "brand": "Heeley",
-      "image": "MBTI_TEST/asset/img/ISTP_SI.png"
+      "image": "./asset/img/ISTP_SI.png"
     },
     "IT": {
       "name": "Terre d'Hermès Eau Intense Vetiver",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/ISTP_IT.png"
+      "image": "./asset/img/ISTP_IT.png"
     },
     "TI": {
       "name": "Percival",
       "brand": "Parfums de Marly",
-      "image": "MBTI_TEST/asset/img/ISTP_TI.png"
+      "image": "./asset/img/ISTP_TI.png"
     },
     "IP": {
       "name": "Versace Man Eau Fraîche",
       "brand": "Versace",
-      "image": "MBTI_TEST/asset/img/ISTP_IP.png"
+      "image": "./asset/img/ISTP_IP.png"
     },
     "PI": {
       "name": "Costa Azzurra",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ISTP_PI.png"
+      "image": "./asset/img/ISTP_PI.png"
     },
     "ST": {
       "name": "Ormonde Man",
       "brand": "Ormonde Jayne",
-      "image": "MBTI_TEST/asset/img/ISTP_ST.png"
+      "image": "./asset/img/ISTP_ST.png"
     },
     "TS": {
       "name": "Eau de Pamplemousse Rose",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/ISTP_TS.png"
+      "image": "./asset/img/ISTP_TS.png"
     },
     "SP": {
       "name": "L'Eau d'Issey Pour Homme",
       "brand": "Issey Miyake",
-      "image": "MBTI_TEST/asset/img/ISTP_SP.png"
+      "image": "./asset/img/ISTP_SP.png"
     },
     "PS": {
       "name": "Gucci Guilty Absolute",
       "brand": "Gucci",
-      "image": "MBTI_TEST/asset/img/ISTP_PS.png"
+      "image": "./asset/img/ISTP_PS.png"
     },
     "TP": {
       "name": "Eau Sauvage Parfum",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ISTP_TP.png"
+      "image": "./asset/img/ISTP_TP.png"
     },
     "PT": {
       "name": "Le Male",
       "brand": "Jean Paul Gaultier",
-      "image": "MBTI_TEST/asset/img/ISTP_PT.png"
+      "image": "./asset/img/ISTP_PT.png"
     }
   },
   "ESTP": {
     "ES": {
       "name": "Chinotto di Liguria",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/ESTP_ES.png"
+      "image": "./asset/img/ESTP_ES.png"
     },
     "SE": {
       "name": "Orange Sanguine",
       "brand": "Atelier Cologne",
-      "image": "MBTI_TEST/asset/img/ESTP_SE.png"
+      "image": "./asset/img/ESTP_SE.png"
     },
     "ET": {
       "name": "Homme Sport",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ESTP_ET.png"
+      "image": "./asset/img/ESTP_ET.png"
     },
     "TE": {
       "name": "Bigarade Concentree",
       "brand": "Frederic Malle",
-      "image": "MBTI_TEST/asset/img/ESTP_TE.png"
+      "image": "./asset/img/ESTP_TE.png"
     },
     "EP": {
       "name": "Crystal Noir",
       "brand": "Versace",
-      "image": "MBTI_TEST/asset/img/ESTP_EP.png"
+      "image": "./asset/img/ESTP_EP.png"
     },
     "PE": {
       "name": "Acqua di Gio Profumo",
       "brand": "Giorgio Armani",
-      "image": "MBTI_TEST/asset/img/ESTP_PE.png"
+      "image": "./asset/img/ESTP_PE.png"
     },
     "ST": {
       "name": "Feve Delicieuse",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ESTP_ST.png"
+      "image": "./asset/img/ESTP_ST.png"
     },
     "TS": {
       "name": "Nio",
       "brand": "Xerjoff",
-      "image": "MBTI_TEST/asset/img/ESTP_TS.png"
+      "image": "./asset/img/ESTP_TS.png"
     },
     "SP": {
       "name": "L'Eau Bleue d'Issey",
       "brand": "Issey Miyake",
-      "image": "MBTI_TEST/asset/img/ESTP_SP.png"
+      "image": "./asset/img/ESTP_SP.png"
     },
     "PS": {
       "name": "Royal Mayfair",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/ESTP_PS.png"
+      "image": "./asset/img/ESTP_PS.png"
     },
     "TP": {
       "name": "Millesime Imperial",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/ESTP_TP.png"
+      "image": "./asset/img/ESTP_TP.png"
     },
     "PT": {
       "name": "Amber & Lavender",
       "brand": "Jo Malone",
-      "image": "MBTI_TEST/asset/img/ESTP_PT.png"
+      "image": "./asset/img/ESTP_PT.png"
     }
   },
   "INFJ": {
     "IN": {
       "name": "Tobacco Vanille",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/INFJ_IN.png"
+      "image": "./asset/img/INFJ_IN.png"
     },
     "NI": {
       "name": "Orange Bitters",
       "brand": "Jo Malone",
-      "image": "MBTI_TEST/asset/img/INFJ_NI.png"
+      "image": "./asset/img/INFJ_NI.png"
     },
     "IF": {
       "name": "Le Jardin de Monsieur Li",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/INFJ_IF.png"
+      "image": "./asset/img/INFJ_IF.png"
     },
     "FI": {
       "name": "L'Air du Desert Marocain",
       "brand": "Tauer Perfumes",
-      "image": "MBTI_TEST/asset/img/INFJ_FI.png"
+      "image": "./asset/img/INFJ_FI.png"
     },
     "IJ": {
       "name": "Sel Marin",
       "brand": "Heeley",
-      "image": "MBTI_TEST/asset/img/INFJ_IJ.png"
+      "image": "./asset/img/INFJ_IJ.png"
     },
     "NF": {
       "name": "Carnal Flower",
       "brand": "Frederic Malle",
-      "image": "MBTI_TEST/asset/img/INFJ_NF.png"
+      "image": "./asset/img/INFJ_NF.png"
     },
     "FN": {
       "name": "Jasmin Rouge",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/INFJ_FN.png"
+      "image": "./asset/img/INFJ_FN.png"
     },
     "JN": {
       "name": "Thé Noir 29",
       "brand": "Le Labo",
-      "image": "MBTI_TEST/asset/img/INFJ_JN.png"
+      "image": "./asset/img/INFJ_JN.png"
     },
     "FJ": {
       "name": "La Tulipe",
       "brand": "Byredo",
-      "image": "MBTI_TEST/asset/img/INFJ_FJ.png"
+      "image": "./asset/img/INFJ_FJ.png"
     },
     "JF": {
       "name": "L'Heure Bleue",
       "brand": "Guerlain",
-      "image": "MBTI_TEST/asset/img/INFJ_JF.png"
+      "image": "./asset/img/INFJ_JF.png"
     },
     "NJ": {
       "name": "Myrrhe Impériale",
       "brand": "Guerlain",
-      "image": "MBTI_TEST/asset/img/INFJ_NJ.png"
+      "image": "./asset/img/INFJ_NJ.png"
     },
     "JI": {
       "name": "Shalimar Parfum Initial",
       "brand": "Guerlain",
-      "image": "MBTI_TEST/asset/img/INFJ_JI.png"
+      "image": "./asset/img/INFJ_JI.png"
     }
   },
   "ENFP": {
     "EN": {
       "name": "Citrus Bigarade",
       "brand": "Atelier Cologne",
-      "image": "MBTI_TEST/asset/img/ENFP_EN.png"
+      "image": "./asset/img/ENFP_EN.png"
     },
     "NE": {
       "name": "Epic Man",
       "brand": "Amouage",
-      "image": "MBTI_TEST/asset/img/ENFP_NE.png"
+      "image": "./asset/img/ENFP_NE.png"
     },
     "EF": {
       "name": "Bal d'Afrique",
       "brand": "Byredo",
-      "image": "MBTI_TEST/asset/img/ENFP_EF.png"
+      "image": "./asset/img/ENFP_EF.png"
     },
     "FE": {
       "name": "Café Rose",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ENFP_FE.png"
+      "image": "./asset/img/ENFP_FE.png"
     },
     "EP": {
       "name": "Versace Pour Femme",
       "brand": "Versace",
-      "image": "MBTI_TEST/asset/img/ENFP_EP.png"
+      "image": "./asset/img/ENFP_EP.png"
     },
     "PE": {
       "name": "Aqua Allegoria Flora Nymphea",
       "brand": "Guerlain",
-      "image": "MBTI_TEST/asset/img/ENFP_PE.png"
+      "image": "./asset/img/ENFP_PE.png"
     },
     "NF": {
       "name": "Blanche",
       "brand": "Byredo",
-      "image": "MBTI_TEST/asset/img/ENFP_NF.png"
+      "image": "./asset/img/ENFP_NF.png"
     },
     "FN": {
       "name": "Noir de Noir",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ENFP_FN.png"
+      "image": "./asset/img/ENFP_FN.png"
     },
     "NP": {
       "name": "Aqua Celestia",
       "brand": "Maison Francis Kurkdjian",
-      "image": "MBTI_TEST/asset/img/ENFP_NP.png"
+      "image": "./asset/img/ENFP_NP.png"
     },
     "PN": {
       "name": "Oud Ispahan",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ENFP_PN.png"
+      "image": "./asset/img/ENFP_PN.png"
     },
     "FP": {
       "name": "Red Roses",
       "brand": "Jo Malone",
-      "image": "MBTI_TEST/asset/img/ENFP_FP.png"
+      "image": "./asset/img/ENFP_FP.png"
     },
     "PF": {
       "name": "My Burberry",
       "brand": "Burberry",
-      "image": "MBTI_TEST/asset/img/ENFP_PF.png"
+      "image": "./asset/img/ENFP_PF.png"
     }
   },
   "ISFJ": {
     "IS": {
       "name": "Tobacco Oud",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ISFJ_IS.png"
+      "image": "./asset/img/ISFJ_IS.png"
     },
     "SI": {
       "name": "Acqua di Colonia",
       "brand": "Santa Maria Novella",
-      "image": "MBTI_TEST/asset/img/ISFJ_SI.png"
+      "image": "./asset/img/ISFJ_SI.png"
     },
     "IF": {
       "name": "Gypsy Water",
       "brand": "Byredo",
-      "image": "MBTI_TEST/asset/img/ISFJ_IF.png"
+      "image": "./asset/img/ISFJ_IF.png"
     },
     "FI": {
       "name": "For Her Pure Musc",
       "brand": "Narciso Rodriguez",
-      "image": "MBTI_TEST/asset/img/ISFJ_FI.png"
+      "image": "./asset/img/ISFJ_FI.png"
     },
     "IJ": {
       "name": "N°19",
       "brand": "Chanel",
-      "image": "MBTI_TEST/asset/img/ISFJ_IJ.png"
+      "image": "./asset/img/ISFJ_IJ.png"
     },
     "JI": {
       "name": "Grey Vetiver",
       "brand": "Tom Ford",
-      "image": "MBTI_TEST/asset/img/ISFJ_JI.png"
+      "image": "./asset/img/ISFJ_JI.png"
     },
     "SF": {
       "name": "Musc Ravageur",
       "brand": "Frederic Malle",
-      "image": "MBTI_TEST/asset/img/ISFJ_SF.png"
+      "image": "./asset/img/ISFJ_SF.png"
     },
     "FS": {
       "name": "Eau Capitale",
       "brand": "Diptyque",
-      "image": "MBTI_TEST/asset/img/ISFJ_FS.png"
+      "image": "./asset/img/ISFJ_FS.png"
     },
     "SJ": {
       "name": "Lys Mediterranee",
       "brand": "Frederic Malle",
-      "image": "MBTI_TEST/asset/img/ISFJ_SJ.png"
+      "image": "./asset/img/ISFJ_SJ.png"
     },
     "JS": {
       "name": "Eau de Campagne",
       "brand": "Sisley",
-      "image": "MBTI_TEST/asset/img/ISFJ_JS.png"
+      "image": "./asset/img/ISFJ_JS.png"
     },
     "FJ": {
       "name": "Love, Don't Be Shy",
       "brand": "By Kilian",
-      "image": "MBTI_TEST/asset/img/ISFJ_FJ.png"
+      "image": "./asset/img/ISFJ_FJ.png"
     },
     "JF": {
       "name": "L'Extase",
       "brand": "Nina Ricci",
-      "image": "MBTI_TEST/asset/img/ISFJ_JF.png"
+      "image": "./asset/img/ISFJ_JF.png"
     }
   },
   "ESFJ": {
     "ES": {
       "name": "Twilly d'Hermès Eau Poivrée",
       "brand": "Hermès",
-      "image": "MBTI_TEST/asset/img/ESFJ_ES.png"
+      "image": "./asset/img/ESFJ_ES.png"
     },
     "SE": {
       "name": "Cologne Indelebile",
       "brand": "Frederic Malle",
-      "image": "MBTI_TEST/asset/img/ESFJ_SE.png"
+      "image": "./asset/img/ESFJ_SE.png"
     },
     "EF": {
       "name": "Rose 31",
       "brand": "Le Labo",
-      "image": "MBTI_TEST/asset/img/ESFJ_EF.png"
+      "image": "./asset/img/ESFJ_EF.png"
     },
     "FE": {
       "name": "Flowerbomb",
       "brand": "Viktor & Rolf",
-      "image": "MBTI_TEST/asset/img/ESFJ_FE.png"
+      "image": "./asset/img/ESFJ_FE.png"
     },
     "EJ": {
       "name": "Purple Oud",
       "brand": "Dior",
-      "image": "MBTI_TEST/asset/img/ESFJ_EJ.png"
+      "image": "./asset/img/ESFJ_EJ.png"
     },
     "JE": {
       "name": "Original Vetiver",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/ESFJ_JE.png"
+      "image": "./asset/img/ESFJ_JE.png"
     },
     "SF": {
       "name": "Blu Mediterraneo Mirto di Panarea",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/ESFJ_SF.png"
+      "image": "./asset/img/ESFJ_SF.png"
     },
     "FS": {
       "name": "Verveine Agrumes",
       "brand": "L'Occitane en Provence",
-      "image": "MBTI_TEST/asset/img/ESFJ_FS.png"
+      "image": "./asset/img/ESFJ_FS.png"
     },
     "SJ": {
       "name": "Aqua Allegoria Pamplelune",
       "brand": "Guerlain",
-      "image": "MBTI_TEST/asset/img/ESFJ_SJ.png"
+      "image": "./asset/img/ESFJ_SJ.png"
     },
     "JS": {
       "name": "Elysium Parfum Cologne",
       "brand": "Roja Parfums",
-      "image": "MBTI_TEST/asset/img/ESFJ_JS.png"
+      "image": "./asset/img/ESFJ_JS.png"
     },
     "FJ": {
       "name": "L'Instant de Guerlain",
       "brand": "Guerlain",
-      "image": "MBTI_TEST/asset/img/ESFJ_FJ.png"
+      "image": "./asset/img/ESFJ_FJ.png"
     },
     "JF": {
       "name": "Aventus for Her",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/ESFJ_JF.png"
+      "image": "./asset/img/ESFJ_JF.png"
     }
   },
   "INTP": {
     "IN": {
       "name": "Lalique Pour Homme Equus",
       "brand": "Lalique",
-      "image": "MBTI_TEST/asset/img/INTP_IN.png"
+      "image": "./asset/img/INTP_IN.png"
     },
     "NI": {
       "name": "Tea Escape",
       "brand": "Maison Margiela",
-      "image": "MBTI_TEST/asset/img/INTP_NI.png"
+      "image": "./asset/img/INTP_NI.png"
     },
     "IT": {
       "name": "Sycomore",
       "brand": "Chanel",
-      "image": "MBTI_TEST/asset/img/INTP_IT.png"
+      "image": "./asset/img/INTP_IT.png"
     },
     "TI": {
       "name": "L'Air du Désert Marocain",
       "brand": "Tauer Perfumes",
-      "image": "MBTI_TEST/asset/img/INTP_TI.png"
+      "image": "./asset/img/INTP_TI.png"
     },
     "IP": {
       "name": "Aventus Cologne",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/INTP_IP.png"
+      "image": "./asset/img/INTP_IP.png"
     },
     "PI": {
       "name": "Original Santal",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/INTP_PI.png"
+      "image": "./asset/img/INTP_PI.png"
     },
     "NT": {
       "name": "Cologne Indélébile",
       "brand": "Frederic Malle",
-      "image": "MBTI_TEST/asset/img/INTP_NT.png"
+      "image": "./asset/img/INTP_NT.png"
     },
     "TN": {
       "name": "Colonia Futura",
       "brand": "Acqua di Parma",
-      "image": "MBTI_TEST/asset/img/INTP_TN.png"
+      "image": "./asset/img/INTP_TN.png"
     },
     "NP": {
       "name": "Carbone de Balmain",
       "brand": "Balmain",
-      "image": "MBTI_TEST/asset/img/INTP_NP.png"
+      "image": "./asset/img/INTP_NP.png"
     },
     "PN": {
       "name": "Not a Perfume",
       "brand": "Juliette Has a Gun",
-      "image": "MBTI_TEST/asset/img/INTP_PN.png"
+      "image": "./asset/img/INTP_PN.png"
     },
     "TP": {
       "name": "Terre de Sarment",
       "brand": "Frapin",
-      "image": "MBTI_TEST/asset/img/INTP_TP.png"
+      "image": "./asset/img/INTP_TP.png"
     },
     "PT": {
       "name": "Royal Oud",
       "brand": "Creed",
-      "image": "MBTI_TEST/asset/img/INTP_PT.png"
+      "image": "./asset/img/INTP_PT.png"
     }
   }
 }
