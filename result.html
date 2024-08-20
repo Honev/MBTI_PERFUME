@@ -167,7 +167,7 @@
                     const recommendation = data[mbtiType];
                     if (recommendation && recommendation[topTwoTraits]) {
                         const selectedRecommendation = recommendation[topTwoTraits];
-                        const imagePath = `asset/img/${selectedRecommendation.image}`;
+                        const imagePath = `${selectedRecommendation.image}`;
                         const notes = calculateNotes(mbtiType);
 
                         document.getElementById("perfume-name").textContent = selectedRecommendation.name;
