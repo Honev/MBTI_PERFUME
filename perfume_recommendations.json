@@ -499,7 +499,7 @@
     "EN": {
       "name": "Acqua di Parma Colonia",
       "brand": "Acqua di Parma",
-      "image": "ENTJ_EN.png"
+      "image": "./asset/img/ENTJ_EN.png"
     },
     "NE": {
       "name": "Interlude Man",
