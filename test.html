@@ -43,495 +43,230 @@
       }
     </style>
   </head>
-  <body>
+ <body>
     <div class="container">
+      <!-- 질문들 시작 (무작위로 배치된 질문) -->
       <div class="question active" id="question1">
         <div class="progress">1 / 20</div>
-        <h2 class="question-text">
-          향수를 고를 때, 친구들에게 향수를 시향해보라고 권하며 의견을 구하는
-          편이다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 100, 2)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 80, 2)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 60, 2)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 40, 2)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 20, 2)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 0, 2)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 고를 때, 친구들의 의견을 참고한다.</h2>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 3, 2)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 2, 2)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 1, 2)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 1, 2)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 2, 2)">아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 3, 2)">매우 아니다</div>
       </div>
+
       <div class="question" id="question2">
         <div class="progress">2 / 20</div>
-        <h2 class="question-text">
-          향수를 고를 때, 향의 상세한 성분이나 구체적인 특징을 알아보는 것이
-          중요하다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 100, 3)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 80, 3)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 60, 3)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 40, 3)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 20, 3)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 0, 3)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 구체적인 기억보다 향이 불러일으키는 감정을 더 중요하게 생각한다.</h2>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 3, 3)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 2, 3)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 1, 3)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 1, 3)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 2, 3)">아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 3, 3)">매우 아니다</div>
       </div>
+
       <div class="question" id="question3">
         <div class="progress">3 / 20</div>
-        <h2 class="question-text">
-          향수를 사용할 때, 주로 특별한 모임이나 행사에서 더 자주 사용하나요,
-          아니면 혼자 있을 때도 자주 사용하나요?
-        </h2>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 100, 4)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 80, 4)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 60, 4)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 40, 4)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 20, 4)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 0, 4)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 고를 때, 향수의 가격보다 향을 중요하게 고려한다.</h2>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 3, 4)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 2, 4)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 1, 4)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 1, 4)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 2, 4)">아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 3, 4)">매우 아니다</div>
       </div>
+
       <div class="question" id="question4">
         <div class="progress">4 / 20</div>
-        <h2 class="question-text">
-          향수를 고를 때, 계절에 맞는 향을 선택하는 것이 중요하다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 100, 5)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 80, 5)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 60, 5)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 40, 5)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 20, 5)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 0, 5)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 정해진 일정이나 상황에 맞추어 사용하는 편이다.</h2>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 3, 5)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 2, 5)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 1, 5)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 1, 5)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 2, 5)">아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 3, 5)">매우 아니다</div>
       </div>
+
       <div class="question" id="question5">
         <div class="progress">5 / 20</div>
-        <h2 class="question-text">
-          기분이 좋을 때, 그 기분을 다른 사람과 나누고 싶어지는 편이다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 100, 6)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 80, 6)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 60, 6)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 40, 6)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 20, 6)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 0, 6)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 고를 때, 그날의 직감에 따라 선택하는 경우가 많다.</h2>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 3, 6)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 2, 6)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 1, 6)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 1, 6)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 2, 6)">아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 3, 6)">매우 아니다</div>
       </div>
+
       <div class="question" id="question6">
         <div class="progress">6 / 20</div>
-        <h2 class="question-text">
-          향수를 사용할 때, 그 향이 주는 효과나 목적을 분석하는 편이다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 100, 7)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 80, 7)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 60, 7)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 40, 7)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 20, 7)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 0, 7)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 사람들과 함께 있을 때 더 자주 사용한다.</h2>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 3, 7)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 2, 7)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 1, 7)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 1, 7)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 2, 7)">아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 3, 7)">매우 아니다</div>
       </div>
+
       <div class="question" id="question7">
         <div class="progress">7 / 20</div>
-        <h2 class="question-text">
-          향수를 고를 때, 그 향이 어느 상황에서 적합한지를 판단하고 구매한다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 100, 8)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 80, 8)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 60, 8)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 40, 8)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 20, 8)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 0, 8)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 그 향이 주는 감정적인 만족감을 더 중요하게 여긴다.</h2>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 3, 8)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 2, 8)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 1, 8)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 1, 8)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 2, 8)">아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 3, 8)">매우 아니다</div>
       </div>
+
       <div class="question" id="question8">
         <div class="progress">8 / 20</div>
-        <h2 class="question-text">
-          향수를 사용할 때, 그 향이 나의 이미지를 어떻게 표현할지에 대해
-          생각한다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 100, 9)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 80, 9)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 60, 9)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 40, 9)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 20, 9)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 0, 9)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 구매하기 전에 미리 향수에 대해 조사를 한다.</h2>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 3, 9)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 2, 9)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 1, 9)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 1, 9)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 2, 9)">아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 3, 9)">매우 아니다</div>
       </div>
+
       <div class="question" id="question9">
         <div class="progress">9 / 20</div>
-        <h2 class="question-text">
-          향수를 구매하기 전에 미리 조사를 하고 계획을 세운다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 100, 10)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 80, 10)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 60, 10)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 40, 10)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 20, 10)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 0, 10)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 고를 때, 그 향이 어느 상황에서 적합한지를 판단하고 구매한다.</h2>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 3, 10)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 2, 10)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 1, 10)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 1, 10)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 2, 10)">아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 3, 10)">매우 아니다</div>
       </div>
+
       <div class="question" id="question10">
         <div class="progress">10 / 20</div>
-        <h2 class="question-text">
-          향수를 사용할 때, 정해진 일정이나 상황에 맞추어 사용하는 편이다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 100, 11)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 80, 11)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 60, 11)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 40, 11)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 20, 11)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 0, 11)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향을 맡을 때, 구체적인 기억이나 경험을 떠올린다.</h2>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 3, 11)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 2, 11)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 1, 11)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 1, 11)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 2, 11)">아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 3, 11)">매우 아니다</div>
       </div>
+
       <div class="question" id="question11">
         <div class="progress">11 / 20</div>
-        <h2 class="question-text">
-          새로운 향수를 시도할 때, 그 향이 주는 전체적인 느낌에 집중하는 편이다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 100, 12)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 80, 12)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 60, 12)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 40, 12)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 20, 12)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 0, 12)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 그 향이 나의 이미지를 어떻게 표현할지에 대해 생각한다.</h2>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 3, 12)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 2, 12)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 1, 12)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 1, 12)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 2, 12)">아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 3, 12)">매우 아니다</div>
       </div>
+
       <div class="question" id="question12">
         <div class="progress">12 / 20</div>
-        <h2 class="question-text">
-          특정 향을 맡으면 과거의 구체적인 기억이나 장소가 떠오르는 편이다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 100, 13)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 80, 13)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 60, 13)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 40, 13)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 20, 13)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 0, 13)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 고를 때, 계절에 맞는 향을 선택하는 것이 중요하다.</h2>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 3, 13)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 2, 13)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 1, 13)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 1, 13)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 2, 13)">아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 3, 13)">매우 아니다</div>
       </div>
+
       <div class="question" id="question13">
         <div class="progress">13 / 20</div>
-        <h2 class="question-text">
-          향수를 고를 때, 그날의 직감에 따라 선택하는 경우가 많다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 100, 14)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 80, 14)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 60, 14)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 40, 14)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 20, 14)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 0, 14)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 그날그날 기분에 따라 향수를 선택한다.</h2>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 3, 14)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 2, 14)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 1, 14)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 1, 14)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 2, 14)">아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 3, 14)">매우 아니다</div>
       </div>
+
       <div class="question" id="question14">
         <div class="progress">14 / 20</div>
-        <h2 class="question-text">
-          향수를 선물할 때, 상대방의 성격과 취향을 신중하게 고려한다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 100, 15)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 80, 15)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 60, 15)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 40, 15)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 20, 15)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 0, 15)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 고를 때, 상세한 성분이나 특징을 알아보는 것이 중요하다.</h2>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 3, 15)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 2, 15)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'S', 1, 15)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 1, 15)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 2, 15)">아니다</div>
+        <div class="answer" onclick="selectAnswer('SN', 'N', 3, 15)">매우 아니다</div>
       </div>
+
       <div class="question" id="question15">
         <div class="progress">15 / 20</div>
-        <h2 class="question-text">
-          향수를 고를 때, 향의 가격 대비 성능을 중요하게 고려한다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 100, 16)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 80, 16)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 60, 16)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 40, 16)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 20, 16)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 0, 16)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 향이 마음에 들지 않으면 다른 향수를 다시 뿌린다.</h2>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 3, 16)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 2, 16)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'T', 1, 16)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 1, 16)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 2, 16)">아니다</div>
+        <div class="answer" onclick="selectAnswer('TF', 'F', 3, 16)">매우 아니다</div>
       </div>
-      <div class="question" id="question16">
+
+          <div class="question" id="question16">
         <div class="progress">16 / 20</div>
-        <h2 class="question-text">
-          향수를 사용할 때, 주로 구체적인 기억이나 경험을 떠올리나요, 아니면
-          향이 불러일으키는 막연한 상상이나 감정을 더 중요하게 여기나요?
-        </h2>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 100, 17)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 80, 17)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'S', 60, 17)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 40, 17)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 20, 17)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('SN', 'N', 0, 17)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 고를 때, 혼자서 결정하기보다 다른 사람의 의견을 참고한다.</h2>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 3, 17)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 2, 17)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 1, 17)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 1, 17)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 2, 17)">아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 3, 17)">매우 아니다</div>
       </div>
+
       <div class="question" id="question17">
         <div class="progress">17 / 20</div>
-        <h2 class="question-text">
-          향수를 사용할 때, 그 향이 주는 감정적인 만족감을 더 중요하게 여기는
-          편이다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 100, 18)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 80, 18)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'T', 60, 18)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 40, 18)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 20, 18)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('TF', 'F', 0, 18)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 혼자 있을 때 보다 약속이 있는 경우가 더 많다.</h2>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 3, 18)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 2, 18)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 1, 18)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 1, 18)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 2, 18)">아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 3, 18)">매우 아니다</div>
       </div>
+
       <div class="question" id="question18">
         <div class="progress">18 / 20</div>
-        <h2 class="question-text">
-          향수를 고를 때, 다양한 사람들과의 대화를 통해 영감을 받는다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 100, 19)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 80, 19)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'E', 60, 19)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 40, 19)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 20, 19)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('EI', 'I', 0, 19)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 고를 때, 가격과 노트를 확인하고 시향 후 구매하는 것을 선호한다.</h2>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 3, 19)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 2, 19)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 1, 19)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 1, 19)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 2, 19)">아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 3, 19)">매우 아니다</div>
       </div>
+
       <div class="question" id="question19">
         <div class="progress">19 / 20</div>
-        <h2 class="question-text">
-          향수를 보관할 때, 체계적으로 정리해두는 편이다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 100, 20)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 80, 20)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 60, 20)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 40, 20)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 20, 20)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 0, 20)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 기분에 따라 즉흥적으로 선택하는 편이다.</h2>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 3, 20)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 2, 20)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'P', 1, 20)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 1, 20)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 2, 20)">아니다</div>
+        <div class="answer" onclick="selectAnswer('JP', 'J', 3, 20)">매우 아니다</div>
       </div>
+
       <div class="question" id="question20">
         <div class="progress">20 / 20</div>
-        <h2 class="question-text">
-          향수를 사용할 때, 그날그날 기분에 따라 향수를 선택하는 편이다.
-        </h2>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 100, 21)">
-          매우 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 80, 21)">
-          그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'J', 60, 21)">
-          약간 그렇다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 40, 21)">
-          약간 아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 20, 21)">
-          아니다
-        </div>
-        <div class="answer" onclick="selectAnswer('JP', 'P', 0, 21)">
-          매우 아니다
-        </div>
+        <h2 class="question-text">향수를 사용할 때, 집보다 야외에서 더 자주 사용한다.</h2>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 3, 21)">매우 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 2, 21)">그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'E', 1, 21)">약간 그렇다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 1, 21)">약간 아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 2, 21)">아니다</div>
+        <div class="answer" onclick="selectAnswer('EI', 'I', 3, 21)">매우 아니다</div>
       </div>
     </div>
+    
     <script>
       let scores = {
         EI: { E: 0, I: 0 },
