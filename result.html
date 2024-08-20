@@ -53,7 +53,13 @@
         }
 
         .note-section {
-            margin-bottom: 60px; /* 추천 노트와 이미지 저장 버튼 사이의 간격 설정 */
+            margin-bottom: 60px; /* 추천 노트와 링크 복사 버튼 사이의 간격 설정 */
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
         }
 
         .share-buttons button {
@@ -61,6 +67,10 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            background-color: #6589f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
         }
 
         @media screen and (max-width: 600px) {
@@ -88,8 +98,7 @@
         </div>
 
         <div class="share-buttons">
-            <button id="retry-btn">다시하기</button> <!-- 새로 추가된 버튼 -->
-            <button id="save-image-btn">이미지 저장</button>
+            <button id="retry-btn">다시하기</button>
             <button id="copy-link-btn">링크 복사</button>
         </div>
     </div>
@@ -158,7 +167,7 @@
                     const recommendation = data[mbtiType];
                     if (recommendation && recommendation[topTwoTraits]) {
                         const selectedRecommendation = recommendation[topTwoTraits];
-                        const imagePath = `./MBTI_TEST/asset/img/${selectedRecommendation.image}`;
+                        const imagePath = `asset/img/${selectedRecommendation.image}`;
                         const notes = calculateNotes(mbtiType);
 
                         document.getElementById("perfume-name").textContent = selectedRecommendation.name;
@@ -186,8 +195,21 @@
             window.location.href = "index.html";
         });
 
+        // 링크 복사 버튼 클릭 시 테스트 페이지 링크 복사
+        document.getElementById("copy-link-btn").addEventListener("click", function() {
+            const dummy = document.createElement("input");
+            const text = window.location.origin + "/MBTI_TEST/test.html"; // 테스트 링크 복사
+
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+
+            alert("링크가 복사되었습니다!");
+        });
+
         window.onload = calculateResult;
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 </body>
 </html>
