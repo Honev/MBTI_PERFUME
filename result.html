@@ -104,99 +104,90 @@
     </div>
    <script>
     function calculateResult() {
-        const scores = JSON.parse(localStorage.getItem("scores"));
-        
-        console.log("Scores from localStorage:", scores);  // 디버깅용 콘솔 로그
+    const scores = JSON.parse(localStorage.getItem("scores"));
+    
+    console.log("Scores from localStorage:", scores);  // 디버깅용 콘솔 로그
 
-        if (!scores) {
-            alert("테스트 결과를 찾을 수 없습니다. 테스트를 다시 진행해 주세요.");
-            return;
-        }
+    if (!scores) {
+        alert("테스트 결과를 찾을 수 없습니다. 테스트를 다시 진행해 주세요.");
+        return;
+    }
 
-        const mbtiType =
-            (scores.EI.E > scores.EI.I ? "E" : "I") +
-            (scores.SN.S > scores.SN.N ? "S" : "N") +
-            (scores.TF.T > scores.TF.F ? "T" : "F") +
-            (scores.JP.J > scores.JP.P ? "J" : "P");
+    const mbtiType =
+        (scores.EI.E > scores.EI.I ? "E" : "I") +
+        (scores.SN.S > scores.SN.N ? "S" : "N") +
+        (scores.TF.T > scores.TF.F ? "T" : "F") +
+        (scores.JP.J > scores.JP.P ? "J" : "P");
 
-        console.log("Calculated MBTI Type:", mbtiType);  // 디버깅용 콘솔 로그
+    console.log("Calculated MBTI Type:", mbtiType);  // 디버깅용 콘솔 로그
 
-        document.getElementById("mbti-type").textContent = mbtiType;
-        
-            const noteColors = {
-                Floral: "#FFC0CB", // 분홍색
-                Citrus: "#FFD700", // 금색
-                Woody: "#8B4513", // 갈색
-                Spicy: "#FF4500", // 주황색
-                Fresh: "#7FFFD4", // 청록색
-                Sweet: "#FFB6C1", // 연분홍색
-                Oriental: "#DAA520", // 황금색
-                Fruity: "#FF69B4", // 핫핑크색
-                Aquatic: "#4682B4", // 청색
-                Green: "#32CD32", // 연녹색
-            };
+    document.getElementById("mbti-type").textContent = mbtiType;
 
-            function calculateNotes(mbtiType) {
-                const notesMapping = {
-                    E: "Citrus",
-                    I: "Woody",
-                    S: "Floral",
-                    N: "Spicy",
-                    T: "Fresh",
-                    F: "Sweet",
-                    J: "Oriental",
-                    P: "Fruity",
-                };
+    const noteColors = {
+        Floral: "#FFC0CB", // 분홍색
+        Citrus: "#FFD700", // 금색
+        Woody: "#8B4513", // 갈색
+        Spicy: "#FF4500", // 주황색
+        Fresh: "#7FFFD4", // 청록색
+        Sweet: "#FFB6C1", // 연분홍색
+        Oriental: "#DAA520", // 황금색
+        Fruity: "#FF69B4", // 핫핑크색
+        Aquatic: "#4682B4", // 청색
+        Green: "#32CD32", // 연녹색
+    };
 
-                const primaryTrait = mbtiType.charAt(0); // E or I
-                const secondaryTrait = mbtiType.charAt(1); // S or N
+    function calculateNotes(mbtiType) {
+        const notesMapping = {
+            E: "Citrus",
+            I: "Woody",
+            S: "Floral",
+            N: "Spicy",
+            T: "Fresh",
+            F: "Sweet",
+            J: "Oriental",
+            P: "Fruity",
+        };
 
-                return [notesMapping[primaryTrait], notesMapping[secondaryTrait]];
-            }
+        const primaryTrait = mbtiType.charAt(0); // E or I
+        const secondaryTrait = mbtiType.charAt(1); // S or N
 
-            // 상위 두 성향쌍을 점수를 비교하여 정렬
-            let firstTrait = mbtiType[0]; // 첫 번째 성향 (예: E)
-            let secondTrait = mbtiType[1]; // 두 번째 성향 (예: S)
+        return [notesMapping[primaryTrait], notesMapping[secondaryTrait]];
+    }
 
-            // 점수 비교하여 순서 변경
-            const traitScores = {
-                [firstTrait]: scores[firstTrait === "E" ? "EI" : "SN"][firstTrait],
-                [secondTrait]: scores[secondTrait === "E" ? "EI" : "SN"][secondTrait]
-            };
+    fetch("perfume_recommendations.json")
+    .then((response) => response.json())
+    .then((data) => {
+        const recommendations = data[mbtiType];
+        if (recommendations) {
+            const traitCombinations = Object.keys(recommendations);
 
-            if (traitScores[secondTrait] > traitScores[firstTrait]) {
-                [firstTrait, secondTrait] = [secondTrait, firstTrait];
-            }
+            // 무작위로 상위 두 성향쌍의 조합을 선택
+            const randomTraitCombination = traitCombinations[Math.floor(Math.random() * traitCombinations.length)];
 
-            const topTwoTraits = firstTrait + secondTrait;  // 예: "ES" 또는 "SE"
+            const selectedRecommendation = recommendations[randomTraitCombination];
+            const imagePath = `${selectedRecommendation.image}`;
+            const notes = calculateNotes(mbtiType);
 
-            fetch("perfume_recommendations.json")
-            .then((response) => response.json())
-            .then((data) => {
-                const recommendation = data[mbtiType];
-                if (recommendation) {
-                    const selectedRecommendation = recommendation[Object.keys(recommendation)[0]];
-                    const imagePath = `${selectedRecommendation.image}`;
-                    const notes = calculateNotes(mbtiType);
+            document.getElementById("perfume-name").textContent = selectedRecommendation.name;
+            document.getElementById("perfume-brand").textContent = selectedRecommendation.brand;
+            document.getElementById("perfume-image").src = imagePath;
 
-                    document.getElementById("perfume-name").textContent = selectedRecommendation.name;
-                    document.getElementById("perfume-brand").textContent = selectedRecommendation.brand;
-                    document.getElementById("perfume-image").src = imagePath;
-
-                    const noteContent = document.getElementById("note-content");
-                    noteContent.innerHTML = "";
-                    notes.forEach((note) => {
-                        const noteButton = document.createElement("button");
-                        noteButton.className = "note-item";
-                        noteButton.textContent = note;
-                        noteButton.style.backgroundColor = noteColors[note] || "#6c757d";
-                        noteContent.appendChild(noteButton);
-                    });
-                }
-            })
-            .catch((error) => {
-                console.error("Error fetching recommendations:", error);
+            const noteContent = document.getElementById("note-content");
+            noteContent.innerHTML = "";
+            notes.forEach((note) => {
+                const noteButton = document.createElement("button");
+                noteButton.className = "note-item";
+                noteButton.textContent = note;
+                noteButton.style.backgroundColor = noteColors[note] || "#6c757d";
+                noteContent.appendChild(noteButton);
             });
+        }
+    })
+    .catch((error) => {
+        console.error("Error fetching recommendations:", error);
+    });
+}
+
     }
 
     // 다시하기 버튼 클릭 시 첫 페이지로 이동
