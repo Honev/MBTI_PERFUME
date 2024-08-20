@@ -1,191 +1,193 @@
 <!DOCTYPE html>
-
 <html lang="ko">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>MBTI 테스트 결과</title>
-
     <style>
-      /* Ensure 9:16 aspect ratio, centered layout, and proper styling */
-      .container {
-        width: 100%;
-        max-width: 360px;
-        height: 640px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-      }
-
-      .perfume-image {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin-bottom: 20px;
-      }
-
-      .perfume-name {
-        font-weight: bold;
-        margin-top: 16px;
-        font-size: large;
-      }
-
-      .perfume-brand {
-        margin-bottom: 20px;
-      }
-
-      .note-item {
-        display: inline-block;
-        padding: 10px 15px;
-        margin: 5px;
-        font-size: 14px;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        background-color: #6c757d; /* Default color */
-      }
-
-      .note-item:hover {
-        opacity: 0.8;
-      }
-
-      .note-section {
-        margin-bottom: 60px; /* 추천 노트와 이미지 저장 버튼 사이의 간격 설정 */
-      }
-
-      @media screen and (max-width: 600px) {
+        /* Ensure 9:16 aspect ratio, centered layout, and proper styling */
         .container {
-          max-width: 100%;
-          height: auto;
+            width: 100%;
+            max-width: 360px;
+            height: 640px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
         }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="result-title">테스트 결과: <span id="mbti-type"></span></h1>
-      <h2 class="recommendation-title">당신에게 추천하는 향수</h2>
-      <div class="perfume-section">
-        <img
-          alt="향수 이미지"
-          class="perfume-image"
-          id="perfume-image"
-          src=""
-        />
-        <div class="perfume-name" id="perfume-name">향수 이름</div>
-        <div class="perfume-brand" id="perfume-brand">브랜드 이름</div>
-      </div>
-      <div class="note-section">
-        <h2 class="note-title">추천 향수 노트</h2>
-        <div id="note-content">
-          <!-- 추천 노트가 여기에 표시됩니다 -->
-        </div>
-      </div>
 
-      <div class="share-buttons">
-        <button id="save-image-btn">이미지 저장</button>
-        <button id="copy-link-btn">링크 복사</button>
-      </div>
+        .perfume-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .perfume-name {
+            font-weight: bold;
+            margin-top: 16px;
+            font-size: large;
+        }
+
+        .perfume-brand {
+            margin-bottom: 20px;
+        }
+
+        .note-item {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 14px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #6c757d; /* Default color */
+        }
+
+        .note-item:hover {
+            opacity: 0.8;
+        }
+
+        .note-section {
+            margin-bottom: 60px; /* 추천 노트와 이미지 저장 버튼 사이의 간격 설정 */
+        }
+
+        .share-buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="result-title">테스트 결과: <span id="mbti-type"></span></h1>
+        <h2 class="recommendation-title">당신에게 추천하는 향수</h2>
+        <div class="perfume-section">
+            <img alt="향수 이미지" class="perfume-image" id="perfume-image" src="" />
+            <div class="perfume-name" id="perfume-name">향수 이름</div>
+            <div class="perfume-brand" id="perfume-brand">브랜드 이름</div>
+        </div>
+        <div class="note-section">
+            <h2 class="note-title">추천 향수 노트</h2>
+            <div id="note-content">
+                <!-- 추천 노트가 여기에 표시됩니다 -->
+            </div>
+        </div>
+
+        <div class="share-buttons">
+            <button id="retry-btn">다시하기</button> <!-- 새로 추가된 버튼 -->
+            <button id="save-image-btn">이미지 저장</button>
+            <button id="copy-link-btn">링크 복사</button>
+        </div>
     </div>
     <script>
-      function calculateResult() {
-        const scores = JSON.parse(localStorage.getItem("scores"));
+        function calculateResult() {
+            const scores = JSON.parse(localStorage.getItem("scores"));
 
-        const mbtiType =
-          (scores.EI.E >= scores.EI.I ? "E" : "I") +
-          (scores.SN.S >= scores.SN.N ? "S" : "N") +
-          (scores.TF.T >= scores.TF.F ? "T" : "F") +
-          (scores.JP.J >= scores.JP.P ? "J" : "P");
+            const mbtiType =
+                (scores.EI.E >= scores.EI.I ? "E" : "I") +
+                (scores.SN.S >= scores.SN.N ? "S" : "N") +
+                (scores.TF.T >= scores.TF.F ? "T" : "F") +
+                (scores.JP.J >= scores.JP.P ? "J" : "P");
 
-        document.getElementById("mbti-type").textContent = mbtiType;
+            document.getElementById("mbti-type").textContent = mbtiType;
 
-        const noteColors = {
-          Floral: "#FFC0CB", // 분홍색
-          Citrus: "#FFD700", // 금색
-          Woody: "#8B4513", // 갈색
-          Spicy: "#FF4500", // 주황색
-          Fresh: "#7FFFD4", // 청록색
-          Sweet: "#FFB6C1", // 연분홍색
-          Oriental: "#DAA520", // 황금색
-          Fruity: "#FF69B4", // 핫핑크색
-          Aquatic: "#4682B4", // 청색
-          Green: "#32CD32", // 연녹색
-        };
+            const noteColors = {
+                Floral: "#FFC0CB", // 분홍색
+                Citrus: "#FFD700", // 금색
+                Woody: "#8B4513", // 갈색
+                Spicy: "#FF4500", // 주황색
+                Fresh: "#7FFFD4", // 청록색
+                Sweet: "#FFB6C1", // 연분홍색
+                Oriental: "#DAA520", // 황금색
+                Fruity: "#FF69B4", // 핫핑크색
+                Aquatic: "#4682B4", // 청색
+                Green: "#32CD32", // 연녹색
+            };
 
-        function calculateNotes(mbtiType) {
-          const notesMapping = {
-            E: "Citrus",
-            I: "Woody",
-            S: "Floral",
-            N: "Spicy",
-            T: "Fresh",
-            F: "Sweet",
-            J: "Oriental",
-            P: "Fruity",
-          };
+            function calculateNotes(mbtiType) {
+                const notesMapping = {
+                    E: "Citrus",
+                    I: "Woody",
+                    S: "Floral",
+                    N: "Spicy",
+                    T: "Fresh",
+                    F: "Sweet",
+                    J: "Oriental",
+                    P: "Fruity",
+                };
 
-          const primaryTrait = mbtiType.charAt(0); // E or I
-          const secondaryTrait = mbtiType.charAt(1); // S or N
+                const primaryTrait = mbtiType.charAt(0); // E or I
+                const secondaryTrait = mbtiType.charAt(1); // S or N
 
-          return [notesMapping[primaryTrait], notesMapping[secondaryTrait]];
-        }
-
-        // 상위 두 성향쌍을 점수를 비교하여 정렬
-        let firstTrait = mbtiType[0]; // 첫 번째 성향 (예: E)
-        let secondTrait = mbtiType[1]; // 두 번째 성향 (예: S)
-
-        // 점수 비교하여 순서 변경
-        const traitScores = {
-          [firstTrait]: scores[firstTrait === "E" ? "EI" : "SN"][firstTrait],
-          [secondTrait]: scores[secondTrait === "E" ? "EI" : "SN"][secondTrait],
-        };
-
-        if (traitScores[secondTrait] > traitScores[firstTrait]) {
-          [firstTrait, secondTrait] = [secondTrait, firstTrait];
-        }
-
-        const topTwoTraits = firstTrait + secondTrait; // 예: "ES" 또는 "SE"
-
-        fetch("perfume_recommendations.json")
-          .then((response) => response.json())
-          .then((data) => {
-            const recommendation = data[mbtiType];
-            if (recommendation && recommendation[topTwoTraits]) {
-              const selectedRecommendation = recommendation[topTwoTraits];
-              const imagePath = `./MBTI_PERFUME/asset/img/${selectedRecommendation.image}`;
-              const notes = calculateNotes(mbtiType);
-
-              document.getElementById("perfume-name").textContent =
-                selectedRecommendation.name;
-              document.getElementById("perfume-brand").textContent =
-                selectedRecommendation.brand;
-              document.getElementById("perfume-image").src = imagePath;
-
-              const noteContent = document.getElementById("note-content");
-              noteContent.innerHTML = "";
-              notes.forEach((note) => {
-                const noteButton = document.createElement("button");
-                noteButton.className = "note-item";
-                noteButton.textContent = note;
-                noteButton.style.backgroundColor =
-                  noteColors[note] || "#6c757d";
-                noteContent.appendChild(noteButton);
-              });
+                return [notesMapping[primaryTrait], notesMapping[secondaryTrait]];
             }
-          })
-          .catch((error) => {
-            console.error("Error fetching recommendations:", error);
-          });
-      }
 
-      window.onload = calculateResult;
+            // 상위 두 성향쌍을 점수를 비교하여 정렬
+            let firstTrait = mbtiType[0]; // 첫 번째 성향 (예: E)
+            let secondTrait = mbtiType[1]; // 두 번째 성향 (예: S)
+
+            // 점수 비교하여 순서 변경
+            const traitScores = {
+                [firstTrait]: scores[firstTrait === "E" ? "EI" : "SN"][firstTrait],
+                [secondTrait]: scores[secondTrait === "E" ? "EI" : "SN"][secondTrait]
+            };
+
+            if (traitScores[secondTrait] > traitScores[firstTrait]) {
+                [firstTrait, secondTrait] = [secondTrait, firstTrait];
+            }
+
+            const topTwoTraits = firstTrait + secondTrait;  // 예: "ES" 또는 "SE"
+
+            fetch("perfume_recommendations.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    const recommendation = data[mbtiType];
+                    if (recommendation && recommendation[topTwoTraits]) {
+                        const selectedRecommendation = recommendation[topTwoTraits];
+                        const imagePath = `./MBTI_TEST/asset/img/${selectedRecommendation.image}`;
+                        const notes = calculateNotes(mbtiType);
+
+                        document.getElementById("perfume-name").textContent = selectedRecommendation.name;
+                        document.getElementById("perfume-brand").textContent = selectedRecommendation.brand;
+                        document.getElementById("perfume-image").src = imagePath;
+
+                        const noteContent = document.getElementById("note-content");
+                        noteContent.innerHTML = "";
+                        notes.forEach((note) => {
+                            const noteButton = document.createElement("button");
+                            noteButton.className = "note-item";
+                            noteButton.textContent = note;
+                            noteButton.style.backgroundColor = noteColors[note] || "#6c757d";
+                            noteContent.appendChild(noteButton);
+                        });
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error fetching recommendations:", error);
+                });
+        }
+
+        // 다시하기 버튼 클릭 시 첫 페이지로 이동
+        document.getElementById("retry-btn").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+
+        window.onload = calculateResult;
     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-  </body>
+</body>
 </html>
