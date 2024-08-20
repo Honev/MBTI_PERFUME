@@ -208,7 +208,7 @@
     // 링크 복사 버튼 클릭 시 테스트 페이지 링크 복사
     document.getElementById("copy-link-btn").addEventListener("click", function() {
         const dummy = document.createElement("input");
-        const text = window.location.origin + "/MBTI_TEST/test.html"; // 테스트 링크 복사
+        const text = https://honev.github.io/MBTI_PERFUME/; // 테스트 링크 복사
 
         document.body.appendChild(dummy);
         dummy.value = text;
@@ -216,7 +216,7 @@
         document.execCommand("copy");
         document.body.removeChild(dummy);
 
-        alert("링크가 복사되었습니다!");
+        alert("테스트 링크가 복사되었습니다!");
     });
 
     window.onload = calculateResult;
