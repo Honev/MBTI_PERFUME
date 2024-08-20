@@ -135,20 +135,35 @@
           return [notesMapping[primaryTrait], notesMapping[secondaryTrait]];
         }
 
+        // 상위 두 성향쌍을 점수를 비교하여 정렬
+        let firstTrait = mbtiType[0]; // 첫 번째 성향 (예: E)
+        let secondTrait = mbtiType[1]; // 두 번째 성향 (예: S)
+
+        // 점수 비교하여 순서 변경
+        const traitScores = {
+          [firstTrait]: scores[firstTrait === "E" ? "EI" : "SN"][firstTrait],
+          [secondTrait]: scores[secondTrait === "E" ? "EI" : "SN"][secondTrait],
+        };
+
+        if (traitScores[secondTrait] > traitScores[firstTrait]) {
+          [firstTrait, secondTrait] = [secondTrait, firstTrait];
+        }
+
+        const topTwoTraits = firstTrait + secondTrait; // 예: "ES" 또는 "SE"
+
         fetch("perfume_recommendations.json")
           .then((response) => response.json())
           .then((data) => {
             const recommendation = data[mbtiType];
-            if (recommendation) {
-              const firstRecommendation =
-                recommendation[Object.keys(recommendation)[0]];
-              const imagePath = `./MBTI_TEST/asset/img/${firstRecommendation.image}`;
+            if (recommendation && recommendation[topTwoTraits]) {
+              const selectedRecommendation = recommendation[topTwoTraits];
+              const imagePath = `./MBTI_TEST/asset/img/${selectedRecommendation.image}`;
               const notes = calculateNotes(mbtiType);
 
               document.getElementById("perfume-name").textContent =
-                firstRecommendation.name;
+                selectedRecommendation.name;
               document.getElementById("perfume-brand").textContent =
-                firstRecommendation.brand;
+                selectedRecommendation.brand;
               document.getElementById("perfume-image").src = imagePath;
 
               const noteContent = document.getElementById("note-content");
@@ -170,6 +185,7 @@
 
       window.onload = calculateResult;
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   </body>
 </html>
