@@ -107,10 +107,10 @@
             const scores = JSON.parse(localStorage.getItem("scores"));
 
             const mbtiType =
-                (scores.EI.E >= scores.EI.I ? "E" : "I") +
-                (scores.SN.S >= scores.SN.N ? "S" : "N") +
-                (scores.TF.T >= scores.TF.F ? "T" : "F") +
-                (scores.JP.J >= scores.JP.P ? "J" : "P");
+                (scores.EI.E > scores.EI.I ? "E" : "I") +
+                (scores.SN.S > scores.SN.N ? "S" : "N") +
+                (scores.TF.T > scores.TF.F ? "T" : "F") +
+                (scores.JP.J > scores.JP.P ? "J" : "P");
 
             document.getElementById("mbti-type").textContent = mbtiType;
 
